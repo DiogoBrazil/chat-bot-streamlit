@@ -21,7 +21,7 @@ image = image.resize((700, 200))
 st.image(image, use_column_width=True)
 st.title("Assistente Virtual com IA Generativa")
 
-local_css("style.css")
+local_css("static/css/style.css")
 
 initialize_session_state()
 
