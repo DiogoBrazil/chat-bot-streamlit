@@ -1,0 +1,44 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stTextInput, .stButton>button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.stChatMessage {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stChatMessage.assistant {
+    background-color: #e1f5fe;
+    align-self: flex-start;
+}
+
+.stChatMessage.user {
+    background-color: #eceff1;
+    align-self: flex-end;
+}
