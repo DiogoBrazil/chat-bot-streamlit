@@ -15,7 +15,7 @@ def get_openai_response(prompt):
     )
 
     full_response = response.choices[0].text.strip()
-    if full_response.startswith(("Bot:", "bot:", "assistant:", "Robô:", "robô:", "Atendente:", "Resposta:")):
+    if full_response.startswith(("Bot:", "bot:", "assistant:", "Robô:", "robô:", "Atendente:", "Resposta:", "R:")):
         full_response = full_response.split(":", 1)[1].strip()
 
     return full_response

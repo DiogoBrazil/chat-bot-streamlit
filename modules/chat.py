@@ -21,5 +21,11 @@ def handle_user_input():
         st.session_state.messages.append({"role": "assistant", "content": response})
 
         with st.chat_message("assistant"):
-            st.markdown(response)
+            prompt = prompt.lower()
+            keys_words = ["code", "script", "codigo", "código", "função", "funcao", "function", "def"]
+            code = any(word in prompt for word in keys_words)
+            if code:
+                st.code(response)
+            else:
+                st.markdown(response)
 
